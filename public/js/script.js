@@ -13,9 +13,15 @@ window.onscroll = function () {
 // navbar
 const nav = document.querySelector("#nav");
 const navMenu = document.querySelector("#nav-menu");
+const list = document.querySelector("ul");
 
-nav.addEventListener("click", function () {
+function toggleNav() {
   nav.classList.toggle("hamburger-active");
   navMenu.classList.toggle("hidden");
   header.classList.toggle("bg-opacity-10");
+}
+nav.addEventListener("click", toggleNav);
+
+list.addEventListener("click", function () {
+  navMenu.classList.add("hidden");
 });

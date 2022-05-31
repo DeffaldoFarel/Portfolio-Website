@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="scroll-behavior: smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@800&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="public/css/style.css" />
   </head>
-  <body class="bg-body font-primary">
+  <body class="bg-body font-primary" id="body">
     <!-- Navbar -->
     <header class="bg-opacity-10 bg-body absolute top-0 left-0 w-full flex items-center z-10">
       <div class="w-full">
@@ -27,23 +27,23 @@
             <nav id="nav-menu" class="hidden absolute py-5 w-full h-screen bg-body top-full left-0 md:block md:static md:h-full md:bg-transparent">
               <ul class="block md:flex">
                 <li class="group mb-2 md:mb-0">
-                  <a href="#" class="text-primary mx-4 font-reguler">Home</a>
+                  <a href="#body" class="text-primary mx-4 font-reguler">Home</a>
                 </li>
                 <span class="mb-2 bg-primary/10 w-full h-0.5 block md:hidden"></span>
                 <li class="group mb-2 md:mb-0">
-                  <a href="#" class="text-primary mx-4 font-reguler">About</a>
+                  <a href="#about" class="text-primary mx-4 font-reguler">About</a>
                 </li>
                 <span class="mb-2 bg-primary/10 w-full h-0.5 block md:hidden"></span>
                 <li class="group mb-2 md:mb-0">
-                  <a href="#" class="text-primary mx-4 font-reguler">My Skills</a>
+                  <a href="#skill" class="text-primary mx-4 font-reguler">My Skills</a>
                 </li>
                 <span class="mb-2 bg-primary/10 w-full h-0.5 block md:hidden"></span>
                 <li class="group mb-2 md:mb-0">
-                  <a href="#" class="text-primary mx-4 font-reguler">Portfolio</a>
+                  <a href="#portfolio" class="text-primary mx-4 font-reguler">Portfolio</a>
                 </li>
                 <span class="mb-2 bg-primary/10 w-full h-0.5 block md:hidden"></span>
                 <li class="group mb-2 md:mb-0">
-                  <a href="#" class="text-primary mx-4 font-reguler">Contact</a>
+                  <a href="#contact" class="text-primary mx-4 font-reguler">Contact</a>
                 </li>
                 <span class="mb-2 bg-primary/10 w-full h-0.5 block md:hidden"></span>
               </ul>
@@ -55,7 +55,7 @@
     <!-- Navbar -->
     <!-- Hero -->
     <section>
-      <div class="mt-20 lg:flex lg:items-center lg:mb-20">
+      <div class="pt-20 lg:flex lg:items-center lg:mb-20" id="home">
         <div class="mb-4 lg:w-1/2 lg:pl-20">
           <h2 class="text-secondary font-medium text-center lg:text-left lg:text-3xl">Hi There,</h2>
           <h1 class="text-primary font-extrabold text-center text-[2.5rem] leading-tight lg:text-left lg:text-7xl">I am Deffaldo</h1>
@@ -107,51 +107,56 @@
     <!-- about skill -->
     <section>
       <div class="md:flex">
-        <div class="w-full bg-body2 py-10">
-          <div class="md:px-5">
-            <div class="mx-5">
-              <h2 class="text-secondary text-3xl font-semibold mb-2 text-center md:text-left">About Me</h2>
-              <div class="w-[5rem] h-[0.2rem] bg-secondary relative mx-auto rounded md:mx-0"></div>
-            </div>
-            <div>
-              <div class="text-primary text-justify mx-5 mt-5">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat repellendus quis libero commodi dolores eos autem veniam! Possimus, numquam velit quasi laborum illo voluptate.</p>
+        <div class="sm:pt-16 w-full" id="about">
+          <div class="bg-body2 py-20 md:pt-10 md:pb-0 lg:pb-10">
+            <div class="sm:pb-20">
+              <div class="md:px-5">
+                <div class="mx-5">
+                  <h2 class="text-secondary text-3xl font-semibold mb-2 text-center md:text-left">About Me</h2>
+                  <div class="w-[5rem] h-[0.2rem] bg-secondary relative mx-auto rounded md:mx-0"></div>
+                </div>
+                <div>
+                  <div class="text-primary text-justify mx-5 mt-5">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis quaerat repellendus quis libero commodi dolores eos autem veniam! Possimus, numquam velit quasi laborum illo voluptate.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="w-full py-10">
-          <div class="md:px-5">
-            <div class="px-5">
-              <h2 class="text-secondary text-3xl font-semibold mb-2 text-center md:text-left">My Skill</h2>
-              <div class="w-[5rem] h-[0.2rem] bg-secondary relative mx-auto rounded md:mx-0"></div>
-            </div>
-            <div class="mt-5 px-5">
-              <div class="text-primary font-semibold w-full flex justify-between">
-                <h3 class="">Design</h3>
-                <h3 class="">85%</h3>
+        <div class="sm:pt-16 w-full" id="skill">
+          <div class="pt-20 pb-20 md:py-10">
+            <div class="md:px-5">
+              <div class="px-5">
+                <h2 class="text-secondary text-3xl font-semibold mb-2 text-center md:text-left">My Skill</h2>
+                <div class="w-[5rem] h-[0.2rem] bg-secondary relative mx-auto rounded md:mx-0"></div>
               </div>
-              <div class="w-full h-1 bg-secondary/10 mt-2 rounded">
-                <div class="w-[85%] h-1 bg-secondary rounded"></div>
+              <div class="mt-5 px-5">
+                <div class="text-primary font-semibold w-full flex justify-between">
+                  <h3 class="">Design</h3>
+                  <h3 class="">85%</h3>
+                </div>
+                <div class="w-full h-1 bg-secondary/10 mt-2 rounded">
+                  <div class="w-[85%] h-1 bg-secondary rounded"></div>
+                </div>
               </div>
-            </div>
-            <div class="mt-5 px-5">
-              <div class="text-primary font-semibold w-full flex justify-between">
-                <h3 class="">HTML & CSS</h3>
-                <h3 class="">70%</h3>
+              <div class="mt-5 px-5">
+                <div class="text-primary font-semibold w-full flex justify-between">
+                  <h3 class="">HTML & CSS</h3>
+                  <h3 class="">70%</h3>
+                </div>
+                <div class="w-full h-1 bg-secondary/10 mt-2 rounded">
+                  <div class="w-[70%] h-1 bg-secondary rounded"></div>
+                </div>
               </div>
-              <div class="w-full h-1 bg-secondary/10 mt-2 rounded">
-                <div class="w-[70%] h-1 bg-secondary rounded"></div>
-              </div>
-            </div>
-            <div class="mt-5 px-5">
-              <div class="text-primary font-semibold w-full flex justify-between">
-                <h3 class="">Javascript</h3>
-                <h3 class="">60%</h3>
-              </div>
-              <div class="w-full h-1 bg-secondary/10 mt-2 rounded">
-                <div class="w-[60%] h-1 bg-secondary rounded"></div>
+              <div class="mt-5 px-5">
+                <div class="text-primary font-semibold w-full flex justify-between">
+                  <h3 class="">Javascript</h3>
+                  <h3 class="">60%</h3>
+                </div>
+                <div class="w-full h-1 bg-secondary/10 mt-2 rounded">
+                  <div class="w-[60%] h-1 bg-secondary rounded"></div>
+                </div>
               </div>
             </div>
           </div>
@@ -160,8 +165,8 @@
     </section>
     <!-- about skill -->
     <!-- portfolio -->
-    <section>
-      <div class="bg-body2 py-10">
+    <section id="portfolio">
+      <div class="bg-body2 py-20">
         <div>
           <div>
             <h2 class="text-secondary text-3xl font-semibold mb-2 text-center">Portfolio</h2>
@@ -194,7 +199,7 @@
     </section>
     <!-- portfolio -->
     <!-- Contact -->
-    <section class="w-full py-10">
+    <section class="w-full py-20" id="contact">
       <div>
         <h2 class="text-secondary text-3xl font-semibold mb-2 text-center">Contact Me</h2>
         <div class="w-[5rem] h-[0.2rem] bg-secondary relative mx-auto rounded"></div>
@@ -230,19 +235,29 @@
       </div>
       <div class="md:flex md:items-center md:justify-center">
         <div class="pt-2 px-5">
-          <h2 class="text-primary font-medium text-lg">Home</h2>
+          <a href="#home">
+            <h2 class="text-primary font-medium text-lg">Home</h2>
+          </a>
         </div>
         <div class="pt-2 px-5">
-          <h2 class="text-primary font-medium text-lg">About</h2>
+          <a href="#about">
+            <h2 class="text-primary font-medium text-lg">About</h2>
+          </a>
         </div>
         <div class="pt-2 px-5">
-          <h2 class="text-primary font-medium text-lg">My Skills</h2>
+          <a href="#skill">
+            <h2 class="text-primary font-medium text-lg">My Skills</h2>
+          </a>
         </div>
         <div class="pt-2 px-5">
-          <h2 class="text-primary font-medium text-lg">Portfolio</h2>
+          <a href="#portfolio">
+            <h2 class="text-primary font-medium text-lg">Portfolio</h2>
+          </a>
         </div>
         <div class="pt-2 px-5">
-          <h2 class="text-primary font-medium text-lg">Contact</h2>
+          <a href="#contact">
+            <h2 class="text-primary font-medium text-lg">Contact</h2>
+          </a>
         </div>
       </div>
       <div class="flex justify-center">
@@ -289,6 +304,6 @@
     </footer>
     <!-- footer -->
 
-    <script src="js/script.js"></script>
+    <script src="public/js/script.js"></script>
   </body>
 </html>
