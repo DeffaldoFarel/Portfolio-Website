@@ -930,8 +930,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     padding-top: 4rem;
   }
 
-  .sm\:pb-20 {
-    padding-bottom: 5rem;
+  .sm\:pt-0 {
+    padding-top: 0px;
   }
 }
 
@@ -1001,6 +1001,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:pb-0 {
     padding-bottom: 0px;
+  }
+
+  .md\:pb-24 {
+    padding-bottom: 6rem;
   }
 
   .md\:text-left {

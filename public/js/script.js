@@ -23,5 +23,7 @@ function toggleNav() {
 nav.addEventListener("click", toggleNav);
 
 list.addEventListener("click", function () {
+  nav.classList.remove("hamburger-active");
   navMenu.classList.add("hidden");
+  header.classList.add("bg-opacity-10");
 });
